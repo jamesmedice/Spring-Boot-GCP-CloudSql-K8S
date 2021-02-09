@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysqldb
+data:
+  spring_cloud_gcp_sql_instance_connection_name: 
+  profile: staging
+  project_id:
+  spring_cloud_gcp_sql_database_name:
+  spring_datasource_username:
+  spring_datasource_password:
