@@ -1,0 +1,35 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inventory
+  labels:
+    app: inventory
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: inventory
+  template:
+    metadata:
+      labels:
+        app: inventory
+    spec:
+      containers:
+      - name: inventory
+        image: gcr.io/qwiklabs-gcp-01-ac54507fa83a/inventory:latest
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: spring_datasource_username
+            valueFrom:
+              secretKeyRef:
+                name: user-credentials
+                key: username
+          - name: spring_datasource_password
+            valueFrom:
+              secretKeyRef:
+                name: user-credentials
+                key: password
+        ports:
+        - containerPort: 8080
+---
