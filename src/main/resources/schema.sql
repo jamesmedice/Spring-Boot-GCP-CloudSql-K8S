@@ -1,3 +1,7 @@
+create database IF NOT EXISTS marketplace;
+
+use marketplace; 
+
 drop table if exists inventory;
 
 create table inventory

@@ -19,6 +19,9 @@ spec:
       - name: inventory
         image: gcr.io/qwiklabs-gcp-01-ac54507fa83a/inventory:latest
         imagePullPolicy: IfNotPresent
+        envFrom:
+        - configMapRef:
+            name: mysqldb
         env:
           - name: spring_datasource_username
             valueFrom:
