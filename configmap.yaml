@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: mysqldb
 data:
-  spring_cloud_gcp_sql_instance_connection_name: qwiklabs-gcp-01-ac54507fa83a:us-central1:marketplace
+  spring_cloud_gcp_sql_instance_connection_name: qwiklabs-gcp-04-bb62e822f576:us-central1:marketplace
   profile: staging
-  project_id: qwiklabs-gcp-01-ac54507fa83a
+  project_id: qwiklabs-gcp-04-bb62e822f576
   spring_cloud_gcp_sql_database_name: marketplace
