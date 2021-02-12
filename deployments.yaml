@@ -23,12 +23,12 @@ spec:
         - configMapRef:
             name: mysqldb
         env:
-          - name: spring_datasource_username
+          - name: db_username
             valueFrom:
               secretKeyRef:
                 name: user-credentials
                 key: username
-          - name: spring_datasource_password
+          - name: db_password
             valueFrom:
               secretKeyRef:
                 name: user-credentials

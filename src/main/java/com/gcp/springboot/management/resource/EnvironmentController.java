@@ -21,11 +21,6 @@ public class EnvironmentController {
 	@Value("${user_profile}")
 	private String profile;
 
-	@Value("${project_id}")
-	private String projectId;
-	@Value("${spring_cloud_gcp_sql_instance_connection_name}")
-	private String connectionName;
-
 	@RequestMapping(value = "/envVars", method = RequestMethod.GET)
 	public Map<String, String> envVars() {
 		logger.info("microservice envVars() invoked");
@@ -42,18 +37,6 @@ public class EnvironmentController {
 	public String profile() {
 		logger.info(profile);
 		return profile;
-	}
-
-	@RequestMapping(value = "/projectId", method = RequestMethod.GET)
-	public String projectId() {
-		logger.info(projectId);
-		return projectId;
-	}
-
-	@RequestMapping(value = "/connectionName", method = RequestMethod.GET)
-	public String connectionName() {
-		logger.info(connectionName);
-		return connectionName;
 	}
 
 }

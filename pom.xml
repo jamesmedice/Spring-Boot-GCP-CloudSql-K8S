@@ -23,11 +23,18 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<springfox-boot-starter>3.0.0</springfox-boot-starter>
 		<mysql-socket>1.0.15</mysql-socket>
+		<mysql-connector>8.0.23</mysql-connector>
 		<java.version>1.8</java.version>
 	</properties>
 
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
@@ -47,7 +54,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
+			<version>${mysql-connector}</version>
 		</dependency>
 
 		<dependency>

@@ -6,9 +6,10 @@ metadata:
     app: inventory
     service: inventory
 spec:
+  type: NodePort
   ports:
   - port: 8080
-    nodePort: 30888
+    nodePort: 30080
     name: http
   selector:
     app: inventory
