@@ -3,9 +3,9 @@ kind: ConfigMap
 metadata:
   name: mysqldb
 data:
-  spring_cloud_gcp_sql_instance_connection_name: qwiklabs-gcp-04-bb62e822f576:us-central1:marketplace
+  spring_cloud_gcp_sql_instance_connection_name: qwiklabs-gcp-01-997154ce00ff:us-central1:marketplace
   profile: staging
-  project_id: qwiklabs-gcp-04-bb62e822f576
+  project_id: qwiklabs-gcp-01-997154ce00ff
   spring_cloud_gcp_sql_database_name: marketplace
   rds_hostname: 35.188.126.92
   rds_db_name: marketplace

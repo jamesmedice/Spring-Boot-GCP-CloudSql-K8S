@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: inventory
-        image: gcr.io/qwiklabs-gcp-04-bb62e822f576/inventory:latest
+        image: gcr.io/qwiklabs-gcp-01-997154ce00ff/inventory:latest
         imagePullPolicy: IfNotPresent
         envFrom:
         - configMapRef:
