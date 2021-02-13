@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
-			<version>1.0.0.M2</version>
+			<version>1.2.7.RELEASE</version>
 		</dependency>
 
 		<dependency>
