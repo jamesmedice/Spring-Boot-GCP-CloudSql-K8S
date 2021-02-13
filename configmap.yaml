@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: mysqldb
 data:
-  instance_connection_name: qwiklabs-gcp-01-f0870e227732:us-central1:marketplace
+  instance_connection_name: qwiklabs-gcp-00-8389f14457c7:us-central1:marketplace
   profile: staging
-  project_id: qwiklabs-gcp-01-f0870e227732
+  project_id: qwiklabs-gcp-00-8389f14457c7
   database_name: marketplace
-  rds_hostname: "35.226.172.28"
+  rds_hostname: "10.16.48.3"
   rds_db_name: marketplace
   rds_port: "3306"

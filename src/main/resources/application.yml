@@ -12,7 +12,8 @@ spring:
     datasource: 
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://${rds_hostname:127.0.0.1}:${rds_port:3306}/${rds_db_name}?createDatabaseIfNotExist=true
-        password: ${db_password:tpm12345}
+        password: ${db_password:tpm1234}
         username: ${db_username:root}
         schema: classpath:/schema.sql
+        data: classpath:/data.sql
         initialization-mode: always
