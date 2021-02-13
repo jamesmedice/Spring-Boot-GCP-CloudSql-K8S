@@ -1,0 +1,25 @@
+spring:
+    cloud:
+        config:
+            namespace: default
+            enabled: true
+            fail-fast: false
+            profile: dev, cloud, mysql
+            label: master
+        kubernetes:
+            reload:
+                enabled: true
+            config:
+                enableApi: true
+                enabled: true
+                namespace: default
+            secrets:
+                name: user-credentials
+                namespace: default
+        gcp:
+            project-id: ${project_id}
+            sql:
+                enabled: true
+                database-type: mysql
+                database-name: ${database_name} 
+                instance-connection-name: ${instance_connection_name}      

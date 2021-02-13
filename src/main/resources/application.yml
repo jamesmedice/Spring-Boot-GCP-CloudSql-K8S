@@ -1,0 +1,18 @@
+management:
+    security:
+        enabled: false
+    endpoint:
+        restart:
+            enabled: true
+spring:
+    profiles:
+        active: ${profile}
+    application:
+        name: inventory
+    datasource: 
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://${rds_hostname:127.0.0.1}:${rds_port:3306}/${rds_db_name}?createDatabaseIfNotExist=true
+        password: ${SECRETS_PASSWORD:tpm1234}
+        username: ${SECRETS_USER:root}
+        schema: classpath:/schema.sql
+        initialization-mode: always
